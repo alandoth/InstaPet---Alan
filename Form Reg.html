@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Inscripción</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">INSTAPET</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">INSTAPET</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Form SignIn.html">Iniciar Sesión</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Galeria.html">Las Fotos Más Destacadas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Ayuda.html">¿Necesitás Ayuda?</a>
+            </li>
+                    </ul>
+<form class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Buscar</button>
+</form>
+</div>
+</div>
+</div>
+</nav>
+  <form class="formulario" action="https://formspree.io/f/mgedyjlz" method="POST" >
+<h4>Formulario de Registro</h4>
+<label for="nombres">Nombre</label>
+<input class="controles" type="text" name="nombres" id="nombres" placeholder="Nombre de la mascota">
+<label for="edad">Edad</label>
+<input class="controles" type="number" name="edad" id="edad" placeholder="Edad de la mascota">
+<label for="email">Correo electrónico</label>
+<input class="controles" type="email" name="email" id="email" required placeholder="Correo electrónico">
+<label for="password">Contraseña</label>
+<input class="controles" type="password" name="contraseña" id="password" required placeholder="Contraseña">
+<p class="sexo">Seleccione el sexo de su mascota</p>
+<label> Macho:
+    <input name="sexo" type="radio" value="mch"> 
+  </label>
+    <label> Hembra:
+    <input name="sexo" type="radio" value="hmb"> 
+  </label><br>
+  <label for="tipo">¿Qué tipo de mascota tenés?</label>
+  <select name="tipo" id="tipo">
+      <option value="perros">Perro</option>
+      <option value="gatos">Gato</option>
+      <option value="hamsters">Hamster</option>
+      <option value="peces">Pez</option>
+      <option value="otros">Otro</option>
+  </select>
+<br><br>
+<label for="checkbox"><input id="checkbox" type="checkbox" name="mailing" value="consent"> Acepto los Términos y Condiciones</label>
+<input class="button" type="submit" value="Registrar">
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
